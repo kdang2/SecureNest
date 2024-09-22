@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.Python.Sdk/1.0.0">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectName>WifiScanner</ProjectName>
+    <PythonInterpreterPath>python</PythonInterpreterPath>
+    <WorkingDirectory>$(MSBuildProjectDirectory)</WorkingDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="wifi_scanner.py">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
